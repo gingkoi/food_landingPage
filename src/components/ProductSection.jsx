@@ -1,22 +1,17 @@
 import React from "react";
-import productGif from "../assets/product.gif";
-import product1 from "../assets/products/product1.png";
-import product2 from "../assets/products/product2.png";
-import product3 from "../assets/products/product3.png";
-import product4 from "../assets/products/product4.png";
 
 export default function ProductSection() {
   return (
     <div className="bg-[#f6f2eb]">
-      <div className="flex flex-col items-center md:flex-row md:justify-between px-20">
-        <div className="md:grow flex flex-col items-center mt-10 md:mt-0 md:items-start">
+      <div className="flex flex-col items-center xl:flex-row xl:justify-between px-20">
+        <div className="xl:grow flex flex-col items-center mt-10 xl:mt-0 xl:items-start">
           <p className="uppercase font-bold text-3xl text-primary tracking-wider">
             Introduction
           </p>
-          <h3 className="md:text-8xl text-4xl text-center md:text-left font-black md:w-[600px] w-[300px] my-2 text-primary">
+          <h3 className="xl:text-8xl text-4xl text-center xl:text-left font-black xl:w-[600px] w-[300px] my-2 text-primary">
             MICROWAVABLE MAC & CHEESE
           </h3>
-          <h4 className="md:w-[800px] w-[300px] md:text-lg text-justify text-primary">
+          <h4 className="xl:w-[800px] w-[300px] xl:text-lg text-justify text-primary">
             This delicious cup of golden goodness satisfies a craving only a
             microwavable mac is capable of. Cheesy? Check. Rich? Oh yeah. Quick?
             Your microwave just beeped. For when you’re simply too hungry to
@@ -34,14 +29,18 @@ export default function ProductSection() {
           </div>
         </div>
         <div className="md:w-[800px] w-screen">
-          <img src={productGif} className="bg-cover" alt="gif" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0611/1757/files/ezgif.com-gif-maker_12_1200x.gif?v=1664570664"
+            className="bg-cover"
+            alt="gif"
+          />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-around">
+      <div className="flex flex-col xl:flex-row justify-around">
         <div className="flex flex-col items-center grow py-10 border-2 border-primary">
           <h1 className="uppercase font-black text-primary text-5xl">Pasta</h1>
           <img
-            src={product1}
+            src="https://cdn.shopify.com/s/files/1/0611/1757/products/PAS101-PENNE-FRONT45_1800x.png?v=1655154561"
             className="w-[450px] my-5 hover:scale-105 hover:transform hover:ease-out hover:duration-300"
             alt="pasta"
           />
@@ -52,7 +51,7 @@ export default function ProductSection() {
         <div className="flex flex-col items-center grow py-10 border-2 border-primary">
           <h1 className="uppercase font-black text-primary text-5xl">Pizza</h1>
           <img
-            src={product2}
+            src="https://cdn.shopify.com/s/files/1/0611/1757/products/RoastedVeggie-MainImage_1800x.png?v=1672778641"
             className="w-[400px] my-5 hover:scale-105 hover:transform hover:ease-out hover:duration-300"
             alt="pizza"
           />
@@ -65,7 +64,7 @@ export default function ProductSection() {
             Mac and cheese
           </h1>
           <img
-            src={product3}
+            src="https://cdn.shopify.com/s/files/1/0611/1757/products/Shells_YC_Front_1800x.png?v=1631197844"
             className="w-[400px] my-5 hover:scale-105 hover:transform hover:ease-out hover:duration-300"
             alt="mac"
           />
@@ -76,7 +75,7 @@ export default function ProductSection() {
         <div className="flex flex-col items-center grow py-10 border-2 border-primary">
           <h1 className="uppercase font-black text-primary text-5xl">Rice</h1>
           <img
-            src={product4}
+            src="https://cdn.shopify.com/s/files/1/0611/1757/products/BANZA_PACKAGING_RENDERINGS_RICE_ChipotleTomato_042820copy_1800x.png?v=1602774575"
             className="w-[400px] my-5 hover:scale-105 hover:transform hover:ease-out hover:duration-300"
             alt="rice"
           />

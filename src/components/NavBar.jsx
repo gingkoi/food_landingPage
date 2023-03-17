@@ -13,7 +13,7 @@ export default function NavBar() {
 
   return (
     <div className="bg-white h-[80px] flex justify-between text-primary font-poppin items-center border-b-primary border-b-4 top-0 fixed w-screen z-20">
-      <div className="hidden md:block uppercase font-bold text-xl space-x-12 px-5">
+      <div className="hidden xl:block uppercase font-bold text-xl space-x-12 px-5">
         <a href="/" className=" hover:underline">
           Shop
         </a>
@@ -29,7 +29,7 @@ export default function NavBar() {
           Cheelos
         </h1>
       </div>
-      <div className="hidden md:flex items-center space-x-7 px-5">
+      <div className="hidden xl:flex items-center space-x-7 px-5">
         <a href="/" className="uppercase font-bold text-xl hover:underline">
           How-to
         </a>
@@ -42,7 +42,7 @@ export default function NavBar() {
         <AiOutlineUser size={25} className="cursor-pointer" />
         <FiShoppingBag size={25} className="cursor-pointer" />
       </div>
-      <div className="block md:hidden cursor-pointer mx-5" onClick={handleNav}>
+      <div className="block xl:hidden cursor-pointer mx-5" onClick={handleNav}>
         <GiHamburgerMenu size={30} />
       </div>
       <div

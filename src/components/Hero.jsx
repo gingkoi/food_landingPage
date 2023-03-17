@@ -1,12 +1,11 @@
 import React from "react";
-import picture1 from "../assets/hero.jpg";
 
 export default function Hero() {
   return (
-    <div className="md:flex bg-[#f6f2eb]">
+    <div className="xl:flex bg-[#f6f2eb]">
       <div>
         <img
-          src={picture1}
+          src="https://images.pexels.com/photos/4773769/pexels-photo-4773769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           className="object-cover object-center md:h-[700px] md:border-r-4 border-b-4 border-primary"
           alt="pizza"
         />

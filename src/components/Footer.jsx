@@ -8,8 +8,8 @@ import {
 export default function Footer() {
   return (
     <div className="bg-primary text-white md:flex justify-between py-16 px-20">
-      <div className="order-first md:order-last">
-        <h3 className="text-white md:text-6xl text-3xl font-black">
+      <div className="order-first md:order-last xl:px-10 md:ml-20">
+        <h3 className="text-white xl:text-6xl text-3xl font-black">
           CHICKPEAS MAKE DELICIOUS EMAILS
         </h3>
         <input
@@ -17,21 +17,21 @@ export default function Footer() {
           className="border-2 border-white bg-primary text-white placeholder-white font-bold py-2 px-2 w-full my-5"
           placeholder="YOUR EMAIL"
         />
-        <div className="md:flex justify-between">
+        <div className="xl:flex justify-between">
           <div className="flex items-center space-x-5">
             <AiOutlineInstagram size={40} className="cursor-pointer" />
             <AiOutlineTwitter size={40} className="cursor-pointer" />
             <AiFillFacebook size={40} className="cursor-pointer" />
-            <p className="font-light text-xl">2023 ALL RIGHTS RESERVED</p>
+            <p className="font-light xl:text-xl">2023 ALL RIGHTS RESERVED</p>
           </div>
-          <button className="bg-white text-primary py-2 px-5 rounded-lg text-xl font-bold hover:bg-red-700 hover:text-white hover:transition hover:ease-in-out hover:duration-300">
+          <button className="bg-white text-primary py-2 px-5 my-5 rounded-lg text-xl font-bold hover:bg-red-700 hover:text-white hover:transition hover:ease-in-out hover:duration-300">
             Subscribe
           </button>
         </div>
       </div>
       <div className="mt-3">
         <div className="bg-white h-1 w-full mb-3"></div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
           <div className="flex flex-col space-y-1 font-medium text-xl">
             <a
               href="/"

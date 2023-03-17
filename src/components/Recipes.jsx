@@ -1,12 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import recipe1 from "../assets/recipes/recipe1.jpg";
-import recipe2 from "../assets/recipes/recipe2.png";
-import recipe3 from "../assets/recipes/recipe3.png";
-import recipe4 from "../assets/recipes/recipe4.png";
-import recipe5 from "../assets/recipes/recipe5.png";
-import recipe6 from "../assets/recipes/recipe6.png";
-import recipe7 from "../assets/recipes/recipe7.png";
 
 const recipes = [
   "Red Sauce & Pesto Pizza with fresh mozzarella",
@@ -19,13 +12,13 @@ const recipes = [
 ];
 
 const pictures = [
-  recipe1,
-  recipe2,
-  recipe3,
-  recipe4,
-  recipe5,
-  recipe6,
-  recipe7,
+  "https://cdn.shopify.com/s/files/1/0611/1757/articles/ezgif.com-gif-maker_1_1_1200x.jpg?v=1605157750",
+  "https://cdn.shopify.com/s/files/1/0611/1757/articles/Banza_1110206763_1200x.jpg?v=1608581101",
+  "https://cdn.shopify.com/s/files/1/0611/1757/articles/Kale_Shroom_Ricotta_1200x.png?v=1602521749",
+  "https://cdn.shopify.com/s/files/1/0611/1757/articles/PlnSYF7E_1200x.jpg?v=1608572975",
+  "https://cdn.shopify.com/s/files/1/0611/1757/articles/Pesto_Arugula_1x1_9881662f-ab4d-44a2-91f6-e159ba8d11ae_1200x.png?v=1602521067",
+  "https://cdn.shopify.com/s/files/1/0611/1757/articles/Banza_1110200495_1200x.jpg?v=1608581598",
+  "https://cdn.shopify.com/s/files/1/0611/1757/articles/Brussels_1x1_54cd2fca-4d1f-48ed-8407-88f31700f7a0_1200x.jpg?v=1602519851",
 ];
 
 export default function Recipes() {
@@ -34,8 +27,8 @@ export default function Recipes() {
   };
   const [display, setDisplay] = useState(1);
   return (
-    <div className="md:flex justify-between h-full">
-      <div className="border-2 border-r-primary border-b-primary w-full md:w-[50%] md:h-[980px] grow relative">
+    <div className="xl:flex justify-between h-full">
+      <div className="border-2 border-r-primary border-b-primary w-full xl:w-[50%] xl:h-[980px] grow relative">
         <div className="h-full brightness-50 ">
           <img
             src={pictures[display]}
@@ -52,7 +45,7 @@ export default function Recipes() {
         {recipes.map((recipe, index) => (
           <div
             className="bg-[#f6f2eb] uppercase text-primary font-black text-4xl py-12 text-center border-2 border-b-primary cursor-pointer hover:bg-primary hover:text-white hover:transition hover:ease-in-out hover:duration-300"
-            id={index}
+            key={index}
             onMouseOver={() => handleMouse(index)}
           >
             {recipe}

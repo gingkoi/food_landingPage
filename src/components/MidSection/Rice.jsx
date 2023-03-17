@@ -9,11 +9,11 @@ export default function Rice({ status }) {
           : "hidden"
       }
     >
-      <h3 className="text-3xl md:text-8xl font-black">HOW BANZA STACKS UP</h3>
-      <h4 className="text-2xl md:text-6xl font-black md:my-10 my-5">
+      <h3 className="text-3xl xl:text-8xl font-black">HOW BANZA STACKS UP</h3>
+      <h4 className="text-2xl xl:text-6xl font-black xl:my-10 my-5">
         BANZA VS AVERAGE RICE
       </h4>
-      <div className="flex flex-col md:flex md:flex-row md:space-x-40 space-y-5">
+      <div className="flex flex-col xl:flex-row xl:space-x-40 space-y-5">
         <div className="border-2 border-white rounded-full w-[200px] h-[200px] flex flex-col justify-center">
           <p className="text-8xl font-bold text-center">2X</p>
           <p className="uppercase font-medium text-xl text-center">protein</p>

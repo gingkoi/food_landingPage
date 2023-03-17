@@ -27,9 +27,9 @@ export default function Testimonial() {
       <h2 className="uppercase text-4xl md:text-5xl font-bold text-center">
         What our fans say
       </h2>
-      <div className="flex flex-col md:flex-row items-center md:justify-center my-6 md:space-x-10 gap-4">
-        {people.map((item) => (
-          <Card key={item} name={item.name} quote={item.quote} />
+      <div className="flex flex-col md:flex-row items-center md:justify-center my-6 mx-5 md:space-x-10 gap-4">
+        {people.map((item, index) => (
+          <Card key={index} name={item.name} quote={item.quote} />
         ))}
       </div>
     </div>

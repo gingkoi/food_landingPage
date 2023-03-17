@@ -7,7 +7,7 @@ export default function PizzaTop() {
       <img
         src={mainPizza}
         alt="every-pizza"
-        className="rotate-pizza md:w-[500px]"
+        className="rotate-pizza xl:w-[500px]"
       />
     </div>
   );

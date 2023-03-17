@@ -11,7 +11,7 @@ import Testimonial from "./components/Testimonial";
 
 function App() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <NavBar />
       <Hero />
       <Testimonial />
